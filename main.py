@@ -7,8 +7,11 @@ import taichi as ti
 width, height = 1920, 1080
 offset = np.array([1.3 * width, height]) // 2
 zoom = 2.2 / height
+output_folder = "out/"
 
-textures = pygame.image.load("texture1.jpg") # Best visualized texture texture1.jpg
+texture = "textures/Texture1.jpg"
+textures = pygame.image.load(texture)  # Best visualized texture texture1.jpg
+
 texture_size = min(textures.get_size()) - 1
 texture_array = pygame.surfarray.array3d(textures)
 
@@ -90,7 +93,8 @@ class Mandelbrot:
         if key[pygame.K_SPACE]:
             img = pygame.Surface((width, height))
             img.blit(self.surface, (0, 0), ((0, 0), (width, height)))
-            pygame.image.save(img, "Result.png")
+
+            pygame.image.save(img, output_folder+"Result.png")
 
 
     def update(self):
