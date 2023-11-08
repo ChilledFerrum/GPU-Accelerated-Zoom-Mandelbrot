@@ -1,6 +1,8 @@
 # GPU Accelerated Zoom Mandelbrot
 GPU Accelerated deep zoom Mandelbrot with textures
 
+## I think I like Mandelbrots
+
 ## Install and Execute...
 ```
 > git clone <repository_path.git>
