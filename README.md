@@ -9,4 +9,4 @@ GPU Accelerated deep zoom Mandelbrot with textures
 > python main.py
 ```
 
-#### I think I like Mandelbrots
+#### I think I like Fractals
